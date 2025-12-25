@@ -1,0 +1,5 @@
+{
+  "name": "Vehicle QR Sticker Gen",
+  "description": "Generate vehicle windshield stickers with QR codes for direct calling.",
+  "requestFramePermissions": []
+}
