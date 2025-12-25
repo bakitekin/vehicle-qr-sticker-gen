@@ -19,18 +19,19 @@ const ControlPanel: React.FC<ControlPanelProps> = ({ data, onChange, onDownload 
   ];
 
   return (
-    <div className="bg-white/80 backdrop-blur-md rounded-3xl shadow-xl border border-white/50 p-6 md:p-8 w-full max-w-lg mx-auto">
+    <div className="bg-white/80 backdrop-blur-md rounded-3xl shadow-xl border border-white/50 p-6 md:p-8 w-full max-w-lg mx-auto relative z-10">
       
       {/* Phone Number Input - The most important part */}
-      <div className="mb-8">
+      <div className="mb-8 relative z-10">
         <label className="flex items-center gap-2 text-sm font-bold text-gray-700 mb-3">
           <Smartphone className="w-4 h-4 text-blue-600" />
           TELEFON NUMARASI
         </label>
         <div className="relative group">
-          <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 font-bold text-xl select-none group-focus-within:text-blue-600 transition-colors">+</span>
+          <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 font-bold text-xl select-none pointer-events-none group-focus-within:text-blue-600 transition-colors z-10">+</span>
           <input
             type="tel"
+            inputMode="numeric"
             value={data.phoneNumber}
             onChange={(e) => {
               const val = e.target.value.replace(/[^0-9]/g, '');
@@ -41,7 +42,8 @@ const ControlPanel: React.FC<ControlPanelProps> = ({ data, onChange, onDownload 
               onChange('phoneNumber', val);
             }}
             placeholder="905551234567"
-            className="w-full pl-10 pr-4 py-4 bg-gray-50 border-2 border-gray-100 rounded-2xl focus:ring-4 focus:ring-blue-100 focus:border-blue-500 outline-none transition-all font-mono text-xl font-medium tracking-wide placeholder:text-gray-300"
+            className="w-full pl-10 pr-4 py-4 bg-gray-50 border-2 border-gray-100 rounded-2xl focus:ring-4 focus:ring-blue-100 focus:border-blue-500 outline-none transition-all font-mono text-xl font-medium tracking-wide placeholder:text-gray-300 relative z-20 touch-manipulation"
+            style={{ WebkitAppearance: 'none', WebkitTapHighlightColor: 'transparent' }}
           />
         </div>
         <p className="text-xs text-gray-400 mt-2 px-1">Örn: 905321234567 (Başında 90 kullanın)</p>

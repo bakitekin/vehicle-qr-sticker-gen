@@ -56,7 +56,7 @@ const App: React.FC = () => {
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 items-start">
           
           {/* Left: Design Controls */}
-          <div className="lg:col-span-5 order-2 lg:order-1">
+          <div className="lg:col-span-5 order-2 lg:order-1 relative z-10">
              <div className="mb-6 lg:hidden text-center">
                 <p className="text-gray-500 text-sm">Aşağıdan düzenlemeleri yapın</p>
              </div>
@@ -68,7 +68,7 @@ const App: React.FC = () => {
           </div>
 
           {/* Right: Live Preview */}
-          <div className="lg:col-span-7 order-1 lg:order-2 flex flex-col items-center sticky top-28">
+          <div className="lg:col-span-7 order-1 lg:order-2 flex flex-col items-center sticky top-28 relative z-0">
             
             <div className="text-center mb-8">
               <h1 className="text-3xl lg:text-4xl font-black text-gray-900 mb-3 tracking-tight">
