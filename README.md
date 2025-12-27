@@ -65,7 +65,7 @@ npm install
 npm run dev
 ```
 
-3. Tarayıcınızda `http://localhost:5173` adresine gidin
+3. Tarayıcınızda `http://localhost:3000` adresine gidin
 
 ### Üretim Build'i
 
@@ -73,7 +73,7 @@ npm run dev
 npm run build
 ```
 
-Build edilmiş dosyalar `dist` klasöründe oluşturulur.
+Build edilmiş dosyalar `.next` klasöründe oluşturulur.
 
 ## 📱 Kullanım
 
@@ -85,9 +85,9 @@ Build edilmiş dosyalar `dist` klasöründe oluşturulur.
 
 ## 🛠️ Teknolojiler
 
-- **React 19** - Modern UI kütüphanesi
+- **Next.js 14** - React framework
+- **React 18** - Modern UI kütüphanesi
 - **TypeScript** - Tip güvenliği
-- **Vite** - Hızlı build tool
 - **Tailwind CSS** - Utility-first CSS framework
 - **QRCode.react** - QR kod oluşturma
 - **html-to-image** - Yüksek kaliteli görüntü export
