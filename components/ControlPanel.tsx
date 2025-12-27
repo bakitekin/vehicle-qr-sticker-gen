@@ -46,7 +46,7 @@ const ControlPanel: React.FC<ControlPanelProps> = ({ data, onChange, onDownload 
             style={{ WebkitAppearance: 'none', WebkitTapHighlightColor: 'transparent' }}
           />
         </div>
-        <p className="text-xs text-gray-400 mt-2 px-1">Örn: 905321234567 (Başında 90 kullanın)</p>
+        <p className="text-xs text-gray-400 mt-2 px-1">Örn: 5321234567 (Başında 90 kullanmayın)</p>
       </div>
 
       <div className="space-y-8">
